@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Kalkulator BMI</h1>
+    <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, Hitung sekarang di Kalkulator BMI!</p>
+    <div class="form-group">
+        <label for="jenis-kelamin">Jenis Kelamin:</label>
+        <select id="jenis-kelamin">
+            <option value="laki-laki">Laki-laki</option>
+            <option value="perempuan">Perempuan</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="berat-badan">Berat Badan (kg):</label>
+        <input type="number" id="berat-badan">
+    </div>
+    <div class="form-group">
+        <label for="usia">Usia:</label>
+        <input type="number" id="usia">
+    </div>
+    <div class="form-group">
+        <label for="tinggi-badan">Tinggi Badan (cm):</label>
+        <input type="number" id="tinggi-badan">
+    </div>
+    <button onclick="hitungBMI()">Hitung</button>
+    <button onclick="reset()">Reset</button>
+    <div id="hasil"></div>
+    <script src="script.js"></script>
+</body>
+</html>
